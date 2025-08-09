@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: "/table-booking/",
-  server: {
-    open: true,
-    port: 3001,
-  },
+  // server: {
+  //   open: true,
+  //   port: 3001,
+  // },
 });
