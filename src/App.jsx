@@ -70,23 +70,6 @@ function App() {
             element={
               <div>
                 <MenuBar />
-                {/* <div
-                  id='header-nav-bar'
-                  className="container-header-nav"
-                  style={{
-                    backgroundColor: '#ccb44aff',
-                    display: 'flex',
-                    maxWidth: '887px',
-                    width: 'fit-content',
-                    margin: 'auto',
-                    alignItems: 'center',
-                    justifyContent: 'centre',
-                    gap: '5px',
-                  }}
-                >
-                  <Header />
-                  <Nav />
-                </div> */}
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/about" element={<About />} />
