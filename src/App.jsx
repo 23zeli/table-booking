@@ -50,6 +50,7 @@ import Menu from './Component/Menu';
 import OrderOnline from './Component/OrderOnline';
 import Reservations from './Component/Reservations';
 import Login from './Component/Login';
+import MenuBar from './Component/MenuBar';
 
 function App() {
   return (
@@ -68,10 +69,24 @@ function App() {
             path="*"
             element={
               <div>
-                <div className="container-header-nav">
+                <MenuBar />
+                {/* <div
+                  id='header-nav-bar'
+                  className="container-header-nav"
+                  style={{
+                    backgroundColor: '#ccb44aff',
+                    display: 'flex',
+                    maxWidth: '887px',
+                    width: 'fit-content',
+                    margin: 'auto',
+                    alignItems: 'center',
+                    justifyContent: 'centre',
+                    gap: '5px',
+                  }}
+                >
                   <Header />
                   <Nav />
-                </div>
+                </div> */}
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/about" element={<About />} />

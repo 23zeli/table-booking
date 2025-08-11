@@ -1,3 +1,5 @@
+today
+/*
 * {
   margin: auto;
   padding: 0;
@@ -38,8 +40,8 @@ h3 {
   width: 887px;
   height: 76px;
   display: flex;
-  /* flex-flow: wrap; */
-  /* justify-content: space-between; */
+  flex-flow: wrap;
+  justify-content: space-between;
 }
 
 nav {
@@ -153,4 +155,14 @@ h1 {
 .hero-section-container div {
   background-color: #EDEFEE;
   border-radius: 20px 20px 0px 0px;
-}
+} */
+
+/* .container-header-nav {
+  background-color: brown;
+  margin: auto;
+  width: 887px;
+  height: 76px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}  */
