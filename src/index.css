@@ -1,3 +1,5 @@
+today
+/*
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,6 +13,8 @@
 }
 * {
   /* box-sizing: border-box; */
+  today
+  /*
   margin: auto;
   padding: 0;
 }
@@ -111,6 +115,8 @@ fieldset {
 }
 
 /*Typography*/
+today
+/*
 h1, h2 {
   font-family: "Markazi Text", serif;
   font-optical-sizing: auto;
@@ -125,6 +131,8 @@ p, h3 {
 h1 {
   font-size: 64px;
   /* height: 56px; */
+  today
+  /*
 }
 
 h2 {
@@ -145,7 +153,8 @@ a {
 }
 
 /*Homepage Cards*/
-
+today
+/*
 .homepage-cards {
   display: grid;
   grid-template-columns: 375px 375px;
@@ -196,6 +205,8 @@ h1 {
 }
 
 /*Navigation*/
+today
+/*
 nav {
   width: 660px;
 }
@@ -215,6 +226,8 @@ li {
   height: 76px;
   display: flex;
   /* flex-flow: wrap; */
+  today
+  /*
   justify-content: space-between;
 }
 
@@ -304,6 +317,8 @@ li {
 }
 
 /*Here Section*/
+today
+/*
 .flex-container {
   max-width: max-content;
   margin-top: 70px;
@@ -341,7 +356,8 @@ li {
 .hero-section-container img {
   /* width: 265px;
   height: 185px; */
-  width: 100%;
+  today
+/* width: 100%;
   height: auto;
   border-radius: 20px 20px 0px 0px;
 }
@@ -365,10 +381,9 @@ li {
 }
 
 /*Login page*/
-
-#login-page {
+today
+/*#login-page {
   display:flex;
-  /* margin: auto; */
   gap: 100px;
   align-items: center;
   justify-content: center;
@@ -407,7 +422,8 @@ li {
 }
 
 /* For screens smaller than 768px (e.g. tablets and mobile devices) */
-@media (max-width: 768px) {
+today
+/*@media (max-width: 768px) {
   .container-header-nav {
     width: 100%;
     flex-direction: column;
@@ -425,9 +441,6 @@ li {
     height: auto;
   }
 
-  /* .hero-section-container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  } */
 
   #login-page {
     flex-direction: column;
@@ -444,7 +457,8 @@ li {
 }
 
 /* For screens smaller than 480px (e.g. mobile devices) */
-@media (max-width: 480px) {
+today
+/*@media (max-width: 480px) {
   .container-header-nav {
     padding: 10px;
   }
@@ -465,4 +479,4 @@ li {
   .login-form {
     width: 100%;
   }
-}
+} */
