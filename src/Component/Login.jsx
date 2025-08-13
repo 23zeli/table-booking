@@ -244,6 +244,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import logoImage from '../assets/images/Logo.png';
+import './Login.css'
+
 
 function Login() {
   const [accountType, setAccountType] = useState('login');
@@ -265,20 +268,11 @@ function Login() {
   };
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: '100px',
-        height: '100vh',
-      }}
-    >
+    <div className='login-page' id='login-page'>
       <div>
         <Link to="/">
           <img
-            src="./images/Logo.png"
+            src={logoImage}
             alt="logo"
             style={{ width: '199px', height: '50px' }}
           />
@@ -365,6 +359,7 @@ function Login() {
               onChange={(date) => setDateOfBirth(date)}
               dateFormat="yyyy-MM-dd"
               placeholderText="Date of Birth"
+              id='date-picker'
             />
             <input
               type="email"
