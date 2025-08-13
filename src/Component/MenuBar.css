@@ -1,12 +1,11 @@
 #header-nav-bar {
-  background-color: #ccb44aff;
   display: flex;
   max-width: 887px;
   width: fit-content;
   margin: auto;
   align-items: center;
-  justify-content: center; /* Corrected 'centre' to 'center' */
-  /* gap: 5px; */ /* Uncomment if you need the gap */
+  justify-content: center;
+  /* gap: 5px; */
 }
 
 @media (max-width: 768px) {
