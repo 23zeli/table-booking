@@ -26,7 +26,8 @@ function App() {
             }
           />
           <Route
-            path="*"
+            // path="*"
+            path="/"
             element={
               <div>
                 <MenuBar />
