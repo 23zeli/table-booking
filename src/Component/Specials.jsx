@@ -1,13 +1,19 @@
 import React from 'react'
+import saladImage from '../assets/images/greek salad.jpg';
+import bruchettaImage from '../assets/images/bruchetta.png';
+import dessertImage from '../assets/images/lemon dessert.jpg';
+import './Specials.css'
 
 export default function () {
   return (
         <div
             className='specials'
             style={{
-                width: "860px",
-                height: "824px",
+                maxWidth: '860px',
+                width: 'fit-content',
+                height: "fit-content",
                 margin: "auto",
+                paddingBottom: '1.25rem',
             }}
             id='specials'
         >
@@ -18,10 +24,7 @@ export default function () {
                 </div>
                 <div className="hero-section-container">
                     <div className="greek-salad">
-                        <img
-                            src="./images/greek salad.jpg"
-                            alt="greek_salad"
-                        />
+                        <img id='greek_salad' src={saladImage} alt="Greek Salad" />
                         <h3>Greek salad</h3>
                         <p>
                             The famous Greek salad of crispy lettuce, peppers, olives and our              Chicago style  feta cheese garnished with crunchy garlic and rosemary croutons.
@@ -29,10 +32,7 @@ export default function () {
                         <p>Order a delivery</p>
                     </div>
                     <div>
-                        <img
-                            src="./images/bruchetta.png"
-                            alt="bruchetta"
-                        />
+                        <img id='bruchetta' src={bruchettaImage} alt="Bruchetta" />
                         <h3>Bruchetta</h3>
                         <p>
                             Our Bruchetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.
@@ -40,10 +40,7 @@ export default function () {
                         <p>Order a delivery</p>
                     </div>
                     <div>
-                        <img
-                            src="./images/lemon dessert.jpg"
-                            alt="lemon_dessert"
-                        />
+                        <img id='lemon_dessert' src={dessertImage} alt="lemon dessert" />
                         <h3>Lemon Desert</h3>
                         <p>
                             This comes straight from grandma’s recipe book, every last ingredient has been sourced and is authentic as can be imagined.
