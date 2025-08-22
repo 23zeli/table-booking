@@ -4,7 +4,7 @@ import './Home.css'
 
 function Home() {
   return (
-    <div className="homepage-container">
+    <div className="homepage-container" style={{marginBottom: '10px'}}>
       <div id='homepage' className="homepage">
         <div className="homepage-cards">
           <div
