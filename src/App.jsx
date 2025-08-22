@@ -1,8 +1,6 @@
 // App.js
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Header from './Component/Header';
-import Nav from './Component/Nav';
+import { BrowserRouter, Route, Routes, Outlet } from 'react-router-dom';
 import Footer from './Component/Footer';
 import Home from './Component/Home';
 import About from './Component/About';
@@ -14,35 +12,26 @@ import MenuBar from './Component/MenuBar';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div>
+    <BrowserRouter basename='/table-booking'>
         <Routes>
+          <Route path="/login-page"element={<Login />}/>
           <Route
-            path="/login-page"
-            element={
-              <div>
-                <Login />
-              </div>
-            }
-          />
-          <Route
-            path="*"
+            path="/*"
             element={
               <div>
                 <MenuBar />
-                <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/about" element={<About />} />
-                  <Route path="/menu" element={<Menu />} />
-                  <Route path="/reservations" element={<Reservations />} />
-                  <Route path="/specials" element={<OrderOnline />} />
-                </Routes>
+                <Outlet />
                 <Footer />
               </div>
             }
-          />
+          >
+            <Route path="" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="menu" element={<Menu />} />
+            <Route path="reservations" element={<Reservations />} />
+            <Route path="specials" element={<OrderOnline />} />
+          </Route>
         </Routes>
-      </div>
     </BrowserRouter>
   );
 }
