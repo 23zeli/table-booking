@@ -1,10 +1,17 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import foodImage from '../assets/images/restauranfood.jpg';
 import './Home.css'
 
 
 
 function Home() {
+  const navigate = useNavigate();
+
+  const handleReserveTable = () => {
+    navigate('/reservations');
+  };
+
   return (
     <div id='homepage' className="homepage">
       <div className="homepage-cards">
@@ -33,7 +40,7 @@ function Home() {
               twist.
             </span>
           </p>
-          <button>Reserve a table</button>
+          <button onClick={handleReserveTable}>Reserve a table</button>
         </div>
         <div className="card restaurant-image">
             <img id='img-restaurantFood' src={foodImage} alt="Restaurant Food" />

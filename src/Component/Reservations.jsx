@@ -50,7 +50,7 @@ function Reservations() {
   };
 
   return (
-    <div>
+    <div id='reservation-page'>
       <BookingForm
         date={date}
         setDate={(date) => {
