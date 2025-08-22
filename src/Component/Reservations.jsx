@@ -35,6 +35,10 @@ function Reservations() {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Handle form submission
+    setDate("");
+    setTime("");
+    setGuests(1)
+    setOccasion("Birthday");
     console.log('Reservation made:', { date, time, guests, occasion });
   };
 
@@ -46,6 +50,10 @@ function Reservations() {
       '16:00',
       '17:00',
       '18:00',
+      '19:00',
+      '20:00',
+      '21:00',
+      '22:00',
     ]);
   };
 
