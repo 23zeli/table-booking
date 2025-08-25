@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import foodImage from '../assets/images/restauranfood.jpg';
 import './Home.css'
 
-
-
 function Home() {
   const navigate = useNavigate();
 
