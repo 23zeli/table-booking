@@ -10,7 +10,7 @@
   height: auto;
   max-height: 406px;
   background-color: #495E57;
-  margin-bottom: 150px;
+  /* margin-bottom: 150px; */
 }
 
 .card {
@@ -67,7 +67,7 @@ h1 {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .homepage{
-        height: 900px;
+        height: 600px;
     }
 
     .homepage-cards {
@@ -91,6 +91,6 @@ h1 {
   }
 
   button, #submit {
-    width: 100%; /* Makes button full width */
+    width: 100%; /*Makes button full width*/
   }
 }
